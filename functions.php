@@ -28,7 +28,7 @@ add_action('wp_enqueue_scripts', 'include_jquery');
 
 // Load JavaScript
 function load_js(){
-	// Bootstrap requirements
+	// *--- Bootstrap requirements ---*
 	// wp_enqueue_scripts('jquery');
 	wp_register_script('bootstrapjs',get_template_directory_uri() . '/js/bootstrap.min.js','jquery',false,true);
 	wp_enqueue_script('bootstrapjs');
@@ -43,6 +43,7 @@ add_action('wp_enqueue_scripts','load_js');
 // Theme support 
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
+add_theme_support('widgets');
 
 // Menus
 register_nav_menus(
@@ -56,6 +57,6 @@ register_nav_menus(
 );
 
 // Controls the size of the images rendered in the browser
-// ('nameOfImageSize', verticle, horizontal, croppedByWordpress)
+// ('nameOfImageSize', verticle px, horizontal px, croppedByWordpress)
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, false);

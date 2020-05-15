@@ -1,6 +1,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div class="col-4">
-		<div class="card mb-4">
+	<div class="col-4 d-flex">
+		<div class="card align-self-center mb-4">
 			<!-- Image of Card -->
 			<?php if(has_post_thumbnail()): ?>
 				<div class="card-header">

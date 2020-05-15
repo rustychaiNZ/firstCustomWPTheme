@@ -7,7 +7,7 @@ Template Name: Contact
 <?php get_header(); ?>
 
 <!-- Basic page layout for all future created pages -->
-<div class="container">
+<div class="container bg-light">
 
 	<div class="row">
 		<div class="col-lg-6">
